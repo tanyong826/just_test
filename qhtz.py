@@ -9,7 +9,7 @@ touser = ''
 plustoken = ''
 
 # 茄皇登录https://apig.xiaoyisz.com/qiehuang/ga/public/api/login里面的请求body全部
-# 不是优惠券的奖品有货会推送
+# 不是优惠券的奖品有货会推送1
 qhbody = ''
 
 
