@@ -77,8 +77,5 @@ for a in range(2, len(data), 1):
     if data[a]['leftStock'] > 0:
         message = data[a]['name'] + ' 库存：' + str(data[a]['leftStock'])
         Push(contents=message)
-        getgift_url = 'https://apig.xiaoyisz.com/qiehuang/ga/user/gift/center/exchange?timestamp=' + f'{Timestamp}' + '&nonce=jXsxneKFRdXPmXHi&signature=' + f'{signature}'+'&giftId=1570696354677661696'
-        getgift_html = requests.get(url=getgift_url, headers=gift_headers).text
-        print(getgift_html)
     else:
         print('查看--' + data[a]['name'] + '--库存：' + str(data[a]['leftStock']) + '  洗洗睡没有货！！！')
