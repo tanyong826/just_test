@@ -4,7 +4,7 @@ import requests, demjson ,re,time,json
 # 把值得买的cookie放入下面的单引号里面  有几个帐号就弄几个（默认设置了3个 根据自己情况改）
 cookie_list = ['','','']
 # 活动id
-active_id = ['ljX8qVlEA7','daY8jaOgOo']
+active_id = ['ljX8qVlEA7','PmR8xXP8wy']
 
 
 for i in range(len(cookie_list)):
