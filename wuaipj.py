@@ -1,6 +1,7 @@
 import requests, os
 from bs4 import BeautifulSoup
 
+# 支持本地青龙 云服务器自测 大概率403 Forbidden  报错'NoneType' object has no attribute 'find' 就是云服务器原因
 # 配置cookie 抓取https://www.52pojie.cn/forum.php域名cookie整段 支持多账号 一个引号里面一个cookie 自己根据实际情况增删
 cookie = [
     '',
