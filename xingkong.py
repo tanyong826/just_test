@@ -30,3 +30,4 @@ for i in range(len(cookie)):
     html = requests.post(url=url, headers=headers, data=data)
     result = json.loads(html.text)['msg']
     print(result)
+  
