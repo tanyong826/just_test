@@ -1,6 +1,6 @@
 import requests, json
 
-#配置星空代理http://www.xkdaili.com/main/usercenter.aspx 的cookie 支持多账号 一行一个cookie填单引号里 根据实际需求删减 
+#配置星空代理http://www.xkdaili.com/?ic=4zed0z2s 的cookie 支持多账号 一行一个cookie填单引号里 根据实际需求删减 
 cookie = [
     '',
     '',
