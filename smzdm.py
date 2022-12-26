@@ -39,6 +39,7 @@ for i in range(len(cookie)):
         "sign":hashlib.md5(bytes(f'f=android&sk=ierkM0OZZbsuBKLoAgQ6OJneLMXBQXmzX+LXkNTuKch8Ui2jGlahuFyWIzBiDq/L&time={Timestamp}&token={token}&v=10.4.1&weixin=1&key=apr1$AwP!wRRT$gJ/q.X24poeBInlUJC',encoding='utf-8')).hexdigest().upper()
     }
     url = 'https://user-api.smzdm.com/checkin'
+    url2 = 'https://user-api.smzdm.com/checkin/all_reward'
     headers = {
         'Host': 'user-api.smzdm.com',
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -46,5 +47,9 @@ for i in range(len(cookie)):
         'User-Agent': 'smzdm_android_V10.4.1 rv:841 (22021211RC;Android12;zh)smzdmapp',
     }
     html = requests.post(url=url, headers=headers, data=data)
+    html2 = requests.post(url=url2, headers=headers, data=data)
     result = json.loads(html.text)['error_msg']
+    result2 = json.loads(html2.text)
     print(result)
+    print(result2)
+
