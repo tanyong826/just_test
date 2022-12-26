@@ -52,4 +52,3 @@ for i in range(len(cookie)):
     result2 = json.loads(html2.text)
     print(result)
     print(result2)
-
