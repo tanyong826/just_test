@@ -5,7 +5,7 @@ from urllib import parse
 #青龙是pthon3可能运行不了 会的自己改 自己本地运行
 #值得买做任务关注的人和文章太多了？ 就谢了这个脚本 取消关注用
 #配置值得买cookie
-cookie = '这里天cookie'
+cookie = '这里填cookie'
 
 url = 'https://zhiyou.smzdm.com/guanzhu/daren/'
 headers = {
