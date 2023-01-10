@@ -38,6 +38,9 @@ ddnsto自动续费七天
 
 拿走的记得给我点个star☆
 
+企鹅交流群
+点击链接加入群聊【wd210010】：https://jq.qq.com/?_wv=1027&k=fe5yh5XB
+
 # 京东自动挂机上车地址 
 地址1：http://jdflxfd.tk/login 
 
