@@ -45,3 +45,7 @@ ddnsto自动续费七天
 地址1：http://jdflxfd.tk/login 
 
 地址2：http://krystal033.tk/login
+
+# 赞赏码 觉得帮助到你了 可以赞赏点哈哈
+![微信图片_20230111095147](https://user-images.githubusercontent.com/76995206/211700091-b649ece2-6108-48ed-af9e-3109c86405a9.jpg)
+
