@@ -49,3 +49,4 @@ ddnsto自动续费七天
 # 赞赏码 觉得帮助到你了 可以赞赏点哈哈
 ![未命名1673402622](https://user-images.githubusercontent.com/76995206/211700923-39913716-be27-4c26-8831-5dca15ecefc2.png)
 
+https://star-history.com/#wd210010/just_for_happy
