@@ -49,7 +49,7 @@ ddnsto自动续费七天
 # 赞赏码 觉得帮助到你了 可以赞赏点哈哈
 ![未命名1673402622](https://user-images.githubusercontent.com/76995206/211700923-39913716-be27-4c26-8831-5dca15ecefc2.png)
 
-## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=wd210010/just_for_happy&type=Date)](https://star-history.com/#wd210010/just_for_happy)
+## Stargazers over time
 
+[![Stargazers over time](https://starchart.cc/wd210010/just_for_happy.svg)](https://starchart.cc/wd210010/just_for_happy)
