@@ -50,6 +50,6 @@ ddnsto自动续费七天
 ![未命名1673402622](https://user-images.githubusercontent.com/76995206/211700923-39913716-be27-4c26-8831-5dca15ecefc2.png)
 
 
-## Stargazers over time
+## Star History
 
 [![Stargazers over time](https://starchart.cc/wd210010/just_for_happy.svg)](https://starchart.cc/wd210010/just_for_happy)
