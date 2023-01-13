@@ -3,11 +3,35 @@ from datetime import datetime
 from datetime import timedelta
 
 # 配置参数 登录https://www.ddnsto.com/app/#/devices 抓包cookie
-cookie='ksuser=**********'
+cookie=''
 # 先购买一次7天免费套餐 抓包查看https://www.ddnsto.com/api/user/routers/*****/ 请求头里面的x-csrftoken
-xcsrftoken='**************'
+xcsrftoken=''
 # 先购买一次7天免费套餐 抓包查看https://www.ddnsto.com/api/user/routers/*****/ 这个url里面的*****就是userid
-userid='*****'
+userid=''
+
+# 企业微信推送参数
+corpid = ''
+agentid = ''
+corpsecret = ''
+touser = ''
+# 推送加 token
+plustoken = ''
+
+def Push(contents):
+    # 微信推送
+    if all([corpid, agentid, corpsecret, touser]):
+        token = \
+        requests.get(f'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={corpid}&corpsecret={corpsecret}').json()[
+            'access_token']
+        json = {"touser": touser, "msgtype": "text", "agentid": agentid, "text": {"content": "ddnsto状态推送\n" + contents}}
+        resp = requests.post(f"https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token={token}", json=json)
+        print('微信推送成功' if resp.json()['errmsg'] == 'ok' else '微信推送失败')
+
+    if plustoken:
+        headers = {'Content-Type': 'application/json'}
+        json = {"token": plustoken, 'title': 'ddnsto状态推送', 'content': contents.replace('\n', '<br>'), "template": "json"}
+        resp = requests.post(f'http://www.pushplus.plus/send', json=json, headers=headers).json()
+        print('push+推送成功' if resp['code'] == 200 else 'push+推送失败')
 
 # utc-beijing
 def UTC2BJS(UTC):
@@ -42,6 +66,9 @@ data_2 = {
 }
 html_2 = requests.post(url=url_2, headers=headers,data=data_2)
 result_2 = json.loads(html_2.text)
+if len(result_2)==1:
+    message_1='cookie失效 请刚更新cookie和xcsrftoken'
+    Push(contents=message_1)
 id = result_2['id']
 
 
@@ -61,3 +88,5 @@ if len(result_4['uid'])>0:
     print('****白嫖成功*****'+'\n'+'到期时间：'+UTC2BJS(result_4['active_plan']["product_expired_at"]))
 else:
     print('没有白嫖到！检查配置看看')
+message_2 = '****白嫖成功*****'+'\n'+'到期时间：'+UTC2BJS(result_4['active_plan']["product_expired_at"])
+Push(contents=message_2)
