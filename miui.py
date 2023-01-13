@@ -1,7 +1,7 @@
 import requests, json ,time,base64,binascii,hashlib
 
 # 小米签到
-# 配置帐号密码 一一对应 按需增删 不对上会出错 若账号在非常用设备上登录, 可能会需要验证码, 使用该设备安装图形化工具后自行前去验证https://web-alpha.vip.miui.com/page/info/mio/mio/internalTest 图形化工具怎么安装自行百度
+# 配置帐号密码 一一对应 按需增删 不对上会出错 若帐号密码填写没有错误 还是报错应该是账号在非常用设备上登录, 需要验证码, 使用该设备安装图形化工具后自行前去验证https://web-alpha.vip.miui.com/page/info/mio/mio/internalTest 图形化工具怎么安装可参考https://cloud.tencent.com/developer/article/2069955
 account =['帐号1','帐号2','账号3']
 password =['密码1','密码2','密码3']
 
