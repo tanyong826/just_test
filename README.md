@@ -41,6 +41,8 @@ ddnsto自动续费七天
 企鹅交流群
 点击链接加入群聊【wd210010】：https://jq.qq.com/?_wv=1027&k=fe5yh5XB
 
+电报频道 https://t.me/wd210010_1
+
 # 东东自动挂机上车地址 
 地址1：http://jdflxfd.tk/login 
 
