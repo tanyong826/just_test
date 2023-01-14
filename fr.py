@@ -12,7 +12,7 @@ agentid = ''
 corpsecret = ''
 touser = ''
 # 推送加 token
-plustoken = '5c1524fa76a9420db7089decc1817f55'
+plustoken = ''
 
 def Push(contents):
     # 微信推送
