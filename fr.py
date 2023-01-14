@@ -66,5 +66,5 @@ result = str(re.findall(f'<td class="zzza_{date} zzza_signed_anime_day" title="(
 massage= "签到信息 "+ date + '\n' + user +'\n'+'已签到 今天签到排名：' + sign_rank + ' 连续签到天数：' + lxdays + ' 总天数：'+lxtdays+'\n'+"摇摇乐信息 "+ '\n'+result
 print(massage)
 
-Push(contents=massage)
+Push(contents=massage) 
 
