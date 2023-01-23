@@ -3,7 +3,7 @@ import requests,json,time
 #etc助手小程序-萌兔送喜
 #填入https://gw.etczs.net/api/activity/collect/card/lottery/draw请求头X-APP-TOKEN 支持多账号 格式
 #X_APP_TOKEN = ['token1','token2']
-X_APP_TOKEN = ['3ec8c86d38db6ec529a00d2ab8659eb848ad8610']
+X_APP_TOKEN = ['']
 
 for i in range(len(X_APP_TOKEN)):
     print(f'********第{i+1}个帐号********')
